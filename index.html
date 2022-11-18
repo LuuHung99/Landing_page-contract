@@ -60,14 +60,15 @@
 
 
         .frame {
-            background-image: url("./bg_gcn.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 1200px;
-            height: 850px;
+            /* background-image: url("./bg_gcn.png"); */
+            /* background-repeat: no-repeat;
+            background-size: cover; */
+
             position: relative;
             overflow: hidden;
             margin: 0 auto;
+            width: 1200px;
+            height: 850px;
             transform: rotate(270deg);
             margin-top: 200px;
         }
@@ -100,9 +101,12 @@
         }
 
         .content {
-            z-index: 10;
+            z-index: 1000;
             display: flex;
             justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 20%;
 
         }
 
@@ -150,9 +154,7 @@
             margin-top: 250px;
         }
 
-
         table {
-
             border-collapse: collapse;
             width: 100%;
         }
@@ -246,6 +248,7 @@
 
 <body>
     <div class="frame">
+        <img src="./bg_gcn.png" alt="" class="imageBG" />
         <div class="icon-list">
             <img class="icon-item icon-item1" src="./icon.png" alt="icon" />
             <img class="icon-item icon-item2" src="./icon.png" alt="icon" />
